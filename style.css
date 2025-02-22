@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('background2.webp');
+    background-size: cover;
+}
+
+#bird {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('Bird-2.png');
+    background-size: cover;
+    top: 50%;
+    left: 10%;
+}
+
+.pipe {
+    position: absolute;
+    width: 80px;
+    background-color: green;
+    border: 3px solid black;
+}
+
+.pipe.top {
+    top: 0;
+}
+
+.pipe.bottom {
+    bottom: 0;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#start-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
